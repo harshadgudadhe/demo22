@@ -1,0 +1,138 @@
+CSS : 
+     Stands for cascading style sheet.
+     cascadingrefers to the styles that are applied to elements in a web page. CSS is used to style/design the layout or appearance of web pages.
+
+     CSS can be used in HTML in three ways :
+        i.  Inline 
+        ii. Internal
+        iii.External
+
+        Inline Styling: Its used to apply styles to specific elements suing "style" attribute.
+                    Example: 
+                        <element style="property: value;"> 
+
+        Internal Styling: Its used to apply styles to specific elements or multiple elements using selectors and style as an "element".
+                    Example: 
+                        <style> 
+                           selectors
+                           {
+                            property: value;
+                           }
+                        </style>
+            
+        External Styling: Its used to apply styles to single/multiple element in a seprate file with  ".css" file and attach it to the HTML using "link" tag.
+                    Example:     
+                        <link rel="stylesheet" href="path of file">
+
+             
+        [Note: 
+                i. Inline Styling peference [>] Internal & External Styling peference.
+               ii. CSS styles of internal and external can override each other based on which comes last.
+                   "!important" is the highest peference for property
+                    h1
+                    {
+                        property : value !important
+                    }       
+                           
+        ]   
+
+
+
+        selectors: To apply styles to  multiple elements, we need to select the elements.For that, we use selectors. 
+                   Most common selectors are:
+                            i. Tag name selector: Its used to select all elements of specific tag name.
+                                        Example:
+                                                tagName                      
+                                                      {
+                                                        property : value !important
+                                                      } 
+
+                            ii. Class selector: Its property/attribute for element to elements which is used to select multiple elements. 
+                                                One element may contain multiple class names & multiple element 
+                                        Example:
+                                                .className
+                                                {
+                                                    property : value;
+                                                }
+                                        note: An element can have more than one className.
+                                              And more than one element can have same className.
+
+                           iii. ID Selectors: Used to identify an element uniquely, We can give only one id to an element.
+                                              No more than one elementcan have same id. 
+                                        Example: 
+                                                #idName
+                                                {
+                                                    property : value;
+                                                }
+
+                            iv. Universal selector: Used to style the whole Html document, we can use Universal selector.
+
+                                        Example: 
+                                                *{
+                                                   property: value;
+                                                 }
+                                              
+Note:   !important attribute  <  id selector   <   class Selector    < tagName selector   < Universal selector
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 2
+                                                                                            Date : 20/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+1.  Colors: 
+        Decide the brand & user interface of web page. Its recommended to use Colors as per brand.  
+        => colors can be mentioned in css in multiples ways:
+                      i. Hexcode: its a 6 digit code followed by "#".
+                     ii. RGB(Red Green Blue): Any color can be represented as combination of RED-GREEN-BLUE from 0 to 255 (Total 256 means 1 bit).
+                    iii. Color Name: VS-code provides multiple colorswith name.
+        Suggestion:  Websites for best color-matching: "coolors".
+
+2.  Fonts: Every font-family in world belongs any one of 5 types are:
+         i: serif: This fonts have stroke/sharpness ion corner/ eg. Times Roman(used in news-paper).
+        ii:sans-serif: This fonts not have stroke/sharpness. eg. Arial,Calibri (easy to read).
+       iii:Mono-Space: This fonts have equal height of letters. eg.MS Gothic.
+        iv: Cursive: This fonts are used for styled and curved.eg. script MT(not easy to read.)
+         v: Fantasy: This fonts are used for special effects
+
+
+    How to get this fonts in webpages:
+        Properties: 
+            i.  font-family: Its used to apply fonts to specific element.
+                    Example: 
+            ii. font-weight: Its used to change the thickness of font. (like: from 0-900 or bold or bolder)
+                    Example:
+            iii.font-style: Its used to change the style of the font.(like: normal/Italic/..etc)
+                    Example:
+             iv.font-size: Its used to change size of the fonts.
+                    Example:
+            Suggestion: Use this websites for multiple style of fonts. 
+                    eg: Google Fonts, Adobe Fonts.
+                    process: 'serch google fonts" -> select font font style -> click "get font" -> click "get embed code" -> select "@import" and copy the code to css.
+
+
+3. Units : Used to measure  the size of elements. Most used units are : 
+            i.  px (pixels): Its smaleest unit of screen
+            ii. % (percentage): Its used X% of parent's element size. Its not fixed in size , its always depends of parent elements size. 
+            iii.vh/vw(viewport hieght/width): Its is the x$ of viewport(screen) hieght or viewport width. 
+            iv. em (): 
+            v.  rem (): 
+
+4. Background: Used to assign Background color or Background-image to the web-page. 
+               using following properties:
+                    i. background-color: Used to assign bg color using 
+                       Example: background-color: antiquewhite;
+                    ii.background-image: Used assign bg images using "URL" or "Gradients". 
+                       Example: background-image: url("");  or background-image: linear-gradient(to right, red,green);
+                       OR
+                       Gradient: Are mixer of multiple colors. like "linear-gradient" , "radial-gradient"
+                       Example: background-image: linear-gradient(to right, red,green);
+                    iii.background-repeat: It can be repeat as per property value (repeat/repeat-x/repeat-y/no-repeat).
+                       Example: background-repeat: no-repeat;
+                    iv. background-position: It 
+                       Example: background-position: center;
+                    v. background-size: Decides the size of background like (auto/cover/contain)
+                       Example: background-size: cover;
+                    vi.background-attachment: auto/fixed/scroll         
+                       Example: background-attachment: fixed; 
