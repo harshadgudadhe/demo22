@@ -136,3 +136,89 @@ Note:   !important attribute  <  id selector   <   class Selector    < tagName s
                        Example: background-size: cover;
                     vi.background-attachment: auto/fixed/scroll         
                        Example: background-attachment: fixed; 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 3
+                                                                                            Date : 21/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Linear Gradiants: gradients are the transformation of one color to another. Linear gradient assigns colors in straight way.
+                Example: 
+                     background-image: linear-gradient(position,color1,color2,...)
+                     position can be to left/to right/to bottom/to top/xdeg
+                we can even assign the gradient or image to text 
+                     color: transprent;
+                     background-image: linear-gradient(color1,color2);
+                     background-clip: text;
+
+Radial Gradiants: Linear gradient assigns colors in circular way.
+                Example: 
+                     background-image: linear-gradient(position,color1,color2,...)
+
+
+Box-Modal:
+          Browser treat every element as box. A box contains :
+          i. border
+          ii.border-radius
+          iii.padding
+          iv. margin
+
+          i. border: border is the srounding-line for an element.
+                     Example:
+                          border: size shape color ;
+                we can even assign border-left/right/top/bottom.
+                     Example:
+        ii. border radius: Its a corner radious srounding border corners.
+                     Example: border-radious:size;
+                50% of radius make actual circle for square shape.
+                we can also assign each corner radius seprately. 
+        iii. padding: space in-between border and actual content inside element.
+                     Example: padding: size;
+                we can also assign padding as padding-left/right/top/bottom.
+                Normally padding makes each box increase its height or width bcoz by default all are content boxes. so we need to use.
+                     Example: box-sizing: border-box;
+                              
+        iv. margin: space in between two elements.
+                     Example: margin: size;
+                we can also assign margin as margin-left/right/top/bottom.
+                margin can be negative (-ve) also. 
+
+
+   Notes: Website suggestion for practice "CSS Battle".
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                    DAY 4
+                                                                                            Date : 22/08/25
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Box-Model
+float, display
+position
+flex
+gradienttransitions,animations
+Adv. CSS
+Responsiveness(media Queries)
+HTML, CSS website
+
+
+Float, Display:
+---------------    Its used to make any element floating to the left or right side of screen, it makes the element remove from actual execution and next element takes up the space of floating element.
+                   syntax: 
+                          float: left/right/none;
+                   we can even clear floating element for any other element using "clear" property.
+                   syntax:
+                          clear : left/right/both;
+
+
+Display : 
+---------
+          Is used to arrange elements in aspecific way.
+
+          1. display: block => will make the ele into block so that each element will display in new line,.
+          2. display: Inline => will make the element into Inline so tha each element comes in same line followed by the previous element(maintain same flow).
+                Note: Inline element cant handle the height/width/vertical margins.
+          3. display: Inline-block => work like inline but accept the height  & width also.
+          4. display: none; => removes the elements(visibility: hidden just hides the element).
